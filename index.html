@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Metodologia BEM</title>
-</head>
-<body>
-  <!-- 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Metodologia BEM</title>
+  </head>
+  <body>
+    <!-- 
     BEM (Block, Element, Modifier)
     ---------------
-    > Bloco
-    > Elemento
-    > Modificador
+    .header (Block)
 
-    .header
-
-    .menu-nav
-    .menu-nav__item
-    .menu-nav__item--disabled
-    .menu-nav__item--extended
+    .menu-nav (Block)
+    .menu-nav__item (Element)
+    .menu-nav__item--disabled (Modifier)
+    .menu-nav__item--extended (Modifier)
   -->
 
-  <article class="card">
-    <img src="./img/exemplo1.jpg" alt="Exemplo 1" class="card__imagem">
-    <h3 class="card__titulo">Card</h3>
-    <a href="#" class="card__link">Saiba mais</a>
-  </article>
-  <article class="card">
-    <img src="./img/exemplo2.jpg" alt="Exemplo 2" class="card__imagem">
-    <h3 class="card__titulo">Card</h3>
-    <a href="#" class="card__link">Saiba mais</a>
-  </article>
-  <article class="card">
-    <img src="./img/exemplo3.jpg" alt="Exemplo 3" class="card__imagem">
-    <h3 class="card__titulo">Card</h3>
-    <a href="#" class="card__link">Saiba mais</a>
-  </article>
-  <article class="card">
-    <img src="./img/exemplo4.jpg" alt="Exemplo 4" class="card__imagem">
-    <h3 class="card__titulo">Card</h3>
-    <a href="#" class="card__link">Saiba mais</a>
-  </article>
+    <header class="cabecalho">
+      <img src="img/logo-TW.png" alt="Logo da Treinaweb" class="cabecalho__imagem">
+    </header>
 
+    <main>
+      <section class="introducao">
+        <h1 class="introducao__titulo">Uso da Metodologia BEM</h1>
+        <p class="introducao__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia velit ea recusandae odit eaque illum ad libero architecto qui. Saepe?</p>
+      </section>
 
-</body>
+      <section class="cards">
+        <article class="card card--destaque">
+          <img src="./img/exemplo1.jpg" alt="Exemplo 1" class="card__imagem" />
+          <h3 class="card__titulo card__titulo--destaque">Card</h3>
+          <a href="#" class="card__link card__link--destaque">Saiba mais</a>
+        </article>
+        <article class="card">
+          <img src="./img/exemplo2.jpg" alt="Exemplo 2" class="card__imagem" />
+          <h3 class="card__titulo">Card</h3>
+          <a href="#" class="card__link">Saiba mais</a>
+        </article>
+        <article class="card">
+          <img src="./img/exemplo3.jpg" alt="Exemplo 3" class="card__imagem" />
+          <h3 class="card__titulo">Card</h3>
+          <a href="#" class="card__link">Saiba mais</a>
+        </article>
+        <article class="card">
+          <img src="./img/exemplo4.jpg" alt="Exemplo 4" class="card__imagem" />
+          <h3 class="card__titulo">Card</h3>
+          <a href="#" class="card__link">Saiba mais</a>
+        </article>
+      </section>
+
+      <section class="finais">
+        <h2>Considerações finais</h2>
+        <p class="finais__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deserunt sed ea quidem officia corporis accusantium officiis! Quas, numquam voluptates.</p>
+      </section>
+    </main>
+  </body>
 </html>
