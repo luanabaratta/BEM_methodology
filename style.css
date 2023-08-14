@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+}
+
+.card {
+  width: 400px;
+  margin: 100px auto;
+  padding: 6px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.293);
+  border-radius: 4px;
+}
+
+.card__imagem {
+  width: 100%;
+}
+
+.card__titulo {
+  color: gray;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card__link {
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
